@@ -3,7 +3,7 @@ import torch
 from src.data_loader import prepare_dataframes, load_data
 from src.model import build_model
 from src.train import train
-# from evaluate import evaluate
+from src.evaluate import evaluate
 
 
 def main():
@@ -28,12 +28,13 @@ def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     train(model, train_data, test_data, device=device)
 
-    # # Save the trained model
-    # model.save(model_path)
-    # print(f"Model saved at {model_path}")
+    # Save the trained model
+    model_path = 'models/bird_classification_model.pth'  # Path where the model is saved
+    print(f"Model saved at {model_path}")
 
-    # # Evaluate the model on the test set
-    # evaluate(model_path, test_dir)
+    # Evaluate the model on the test set
+    evaluate(model_path, test_dir)
+
 
 if __name__ == '__main__':
     main()
