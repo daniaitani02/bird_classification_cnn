@@ -11,4 +11,4 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Run train.py when the container launches
-CMD ["python", "src/bad_train.py"]
+CMD ["python", "main.py"]
