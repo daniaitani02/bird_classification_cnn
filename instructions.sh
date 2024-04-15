@@ -7,7 +7,7 @@ git checkout -b train
 cp -r ../data ./data
 
 ## Train
-sudo unzip ./data/100-bird-species.zip -d ./datadata/
+sudo unzip ./data/100-bird-species.zip -d ./data/
 
 docker build -t bird-classification .
 docker run bird-classification
