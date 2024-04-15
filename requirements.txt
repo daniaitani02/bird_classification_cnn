@@ -1,6 +1,7 @@
 numpy
 pandas
-pytorch
+torch
 torchvision
 mlflow
 scikit-learn
+tensorboard
