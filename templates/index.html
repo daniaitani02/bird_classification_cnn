@@ -10,11 +10,26 @@
         <div class="content">
             <h1>Bird Classification</h1>
             <p>Upload an image of a bird and our AI will try to classify it.</p>
+            <!-- Image preview will be shown here -->
+            <div class="image-preview">
+                <img id="previewImage" src="" height="200" style="display: none">
+            </div>
+            <!-- Form for file upload starts here -->
             <form method="POST" enctype="multipart/form-data">
-                <input type="file" name="file" required>
+                <input type="file" name="file" required onchange="previewFile(event);">
                 <input type="submit" value="Upload">
             </form>
         </div>
     </div>
+    <script>
+        function previewFile(event) {
+            var output = document.getElementById('previewImage');
+            output.src = URL.createObjectURL(event.target.files[0]);
+            output.onload = function() {
+                URL.revokeObjectURL(output.src) // free memory
+                output.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>
