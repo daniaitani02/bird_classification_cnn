@@ -1,7 +1,9 @@
-numpy
-pandas
+Flask
 torch
 torchvision
+Pillow
+tensorboard
+numpy
+pandas
 mlflow
 scikit-learn
-tensorboard

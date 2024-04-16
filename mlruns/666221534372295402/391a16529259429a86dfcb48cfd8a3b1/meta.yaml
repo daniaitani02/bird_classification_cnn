@@ -1,0 +1,15 @@
+artifact_uri: file:///home/student/bird_classification_cnn/mlruns/666221534372295402/391a16529259429a86dfcb48cfd8a3b1/artifacts
+end_time: 1713225211071
+entry_point_name: ''
+experiment_id: '666221534372295402'
+lifecycle_stage: active
+run_id: 391a16529259429a86dfcb48cfd8a3b1
+run_name: stately-lark-119
+run_uuid: 391a16529259429a86dfcb48cfd8a3b1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1713224270399
+status: 3
+tags: []
+user_id: student
